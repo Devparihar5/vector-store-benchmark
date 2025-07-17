@@ -1,0 +1,4 @@
+Dataset Size,Recommendation,Reason,ChromaDB Strengths,PGVector Strengths
+100,PGVector,PGVector wins in 3/4 benchmarks,Query,"Insertion, Memory Usage, CPU Usage"
+1000,PGVector,PGVector wins in 3/4 benchmarks,Query,"Insertion, Memory Usage, CPU Usage"
+10000,PGVector,PGVector wins in 3/4 benchmarks,Query,"Insertion, Memory Usage, CPU Usage"

@@ -1,0 +1,7 @@
+database,operation,dataset_size,time_seconds
+ChromaDB,insertion,100,0.3305838108062744
+PGVector,insertion,100,0.09739351272583008
+ChromaDB,insertion,1000,1.6419591903686523
+PGVector,insertion,1000,0.4508852958679199
+ChromaDB,insertion,10000,19.22113561630249
+PGVector,insertion,10000,4.996351480484009

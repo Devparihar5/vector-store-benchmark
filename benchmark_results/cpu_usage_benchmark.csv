@@ -1,0 +1,7 @@
+database,operation,dataset_size,num_queries,cpu_percent
+ChromaDB,cpu_usage,100,50,24.511298788429674
+PGVector,cpu_usage,100,50,5.790321842672175
+ChromaDB,cpu_usage,1000,50,24.876333136006775
+PGVector,cpu_usage,1000,50,5.246958690539831
+ChromaDB,cpu_usage,10000,50,17.842468463051716
+PGVector,cpu_usage,10000,50,4.295859120399113

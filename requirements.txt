@@ -1,0 +1,16 @@
+chromadb
+psycopg2-binary
+pgvector
+numpy
+pandas
+matplotlib
+tqdm
+scikit-learn
+sentence-transformers
+psutil
+langchain
+langchain-community
+langchain-core
+langchain-chroma
+langchain-postgres
+seaborn

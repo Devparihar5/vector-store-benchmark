@@ -1,0 +1,7 @@
+database,operation,dataset_size,memory_mb
+ChromaDB,memory_usage,100,5.920000000000002
+PGVector,memory_usage,100,3.5999999999999943
+ChromaDB,memory_usage,1000,26.22
+PGVector,memory_usage,1000,11.700000000000017
+ChromaDB,memory_usage,10000,66.0
+PGVector,memory_usage,10000,32.19999999999999

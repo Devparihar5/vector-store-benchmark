@@ -1,0 +1,7 @@
+database,operation,dataset_size,num_queries,time_seconds
+ChromaDB,query,100,50,0.34987568855285645
+PGVector,query,100,50,2.257464647293091
+ChromaDB,query,1000,50,0.2882075309753418
+PGVector,query,1000,50,3.035574197769165
+ChromaDB,query,10000,50,0.47246384620666504
+PGVector,query,10000,50,2.770650625228882
