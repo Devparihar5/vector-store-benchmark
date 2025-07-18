@@ -27,29 +27,17 @@ pip install -r requirements.txt
 
 2. Start PostgreSQL with pgvector:
 ```bash
-# Pull PostgreSQL image
-docker pull postgres
-
-# Run PostgreSQL container
-docker run --name my-postgres-db \
-  -e POSTGRES_USER=admin \
-  -e POSTGRES_PASSWORD=admin123 \
-  -e POSTGRES_DB=mydatabase \
-  -p 5433:5432 \
-  -d postgres
-
-# Install pgvector extension dependencies
-docker exec -it my-postgres-db bash -c "apt update && apt install -y git postgresql-server-dev-14 make gcc"
-docker exec -it my-postgres-db bash -c "apt update && apt install -y postgresql-server-dev-17"
-
-# Connect to PostgreSQL and create vector extension
-docker exec -it my-postgres-db psql -U admin -d mydatabase -c "CREATE EXTENSION vector;"
+docker run -it --rm --name postgres -p 5433:5432 \
+   -e POSTGRES_USER=admin \
+   -e POSTGRES_PASSWORD=admin123 \
+   -e POSTGRES_DB=mydatabase \
+   pgvector/pgvector:pg17
 ```
 
 3. Start ChromaDB:
 ```bash
 # Run ChromaDB container
-docker run --name chroma -v ./chroma-data:/data -p 8000:8000 chromadb/chroma
+docker run -it --rm --name chroma -p 8009:8000 chromadb/chroma
 ```
 
 4. Wait a few seconds for the databases to initialize.
